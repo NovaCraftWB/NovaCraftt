@@ -1,0 +1,160 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Despre - NovaCraft</title>
+<link rel="icon" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at 80% 20%, #2a1b4d, #050811 65%);
+  color:white;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  overflow-x:hidden;
+}
+
+.stars{
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 70% 70%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50% 50%, #fff, transparent),
+    radial-gradient(2px 2px at 85% 20%, #fff, transparent);
+  opacity:.35;
+  z-index:0;
+}
+
+nav{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:95%;
+  max-width:1400px;
+  z-index:10;
+}
+
+.navbar-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:18px 32px;
+  backdrop-filter: blur(8px);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+}
+
+.brand img{
+  width:80px;
+}
+
+.menu-links{
+  display:flex;
+  gap:32px;
+}
+
+.menu-links a{
+  color:#cfd0ff;
+  text-decoration:none;
+  font-size:16px;
+  opacity:.9;
+  transition:.25s;
+}
+
+.menu-links a:hover{
+  opacity:1;
+  color:white;
+}
+
+.discord{
+  background:linear-gradient(90deg,#7c3aed,#6366f1);
+  padding:12px 20px;
+  border-radius:14px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  font-size:16px;
+}
+
+
+.hero{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  padding-top:80px;
+}
+
+.card-hero{
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:20px;
+  padding:40px 50px;
+  max-width:700px;
+  text-align:center;
+  backdrop-filter: blur(6px);
+}
+
+.card-hero h1{
+  font-size:36px;
+  color:#c084fc;
+  margin-bottom:24px;
+}
+
+.card-hero p{
+  font-size:20px;
+  line-height:1.8;
+  color:#b4b6d3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav>
+  <div class="navbar-container">
+    <div class="brand">
+      <img src="logo.png" alt="Logo NovaCraft">
+    </div>
+
+    <div class="menu-links">
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="staff.html">Staff</a>
+      <a href="reguli.html">Reguli</a>
+    </div>
+
+    <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="card-hero">
+    <h1>Despre Network</h1>
+    <p>Acest network oferă conexiuni rapide și fiabile între jucători din întreaga lume. Comunitatea este mereu activă, iar serverul funcționează nonstop pentru a asigura experiențe fluide și distractive.</p>
+  </div>
+</section>
+
+</body>
+</html>

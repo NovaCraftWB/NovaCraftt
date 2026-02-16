@@ -1,0 +1,185 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Staff - NovaCraft</title>
+<link rel="icon" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at 80% 20%, #2a1b4d, #050811 65%);
+  color:white;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+.stars{
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 70% 70%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50% 50%, #fff, transparent),
+    radial-gradient(2px 2px at 85% 20%, #fff, transparent);
+  opacity:.35;
+  z-index:0;
+}
+
+nav{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:95%;
+  max-width:1400px;
+  z-index:10;
+}
+
+.navbar-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:18px 32px;
+  backdrop-filter: blur(8px);
+}
+
+.brand img{
+  width:80px;
+}
+
+.menu-links{
+  display:flex;
+  gap:32px;
+}
+
+.menu-links a{
+  color:#cfd0ff;
+  text-decoration:none;
+  font-size:16px;
+  opacity:.9;
+  transition:.25s;
+}
+
+.menu-links a:hover{
+  opacity:1;
+  color:white;
+}
+
+.discord{
+  background:linear-gradient(90deg,#7c3aed,#6366f1);
+  padding:12px 20px;
+  border-radius:14px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  font-size:16px;
+}
+
+.hero{
+  padding-top:160px; 
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  position:relative;
+  z-index:1;
+}
+
+.staff-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
+  gap:20px;
+  width:90%;
+  max-width:1300px;
+}
+
+.staff-card{
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:16px;
+  padding:12px; 
+  text-align:center;
+  transition: transform 0.25s, box-shadow 0.25s;
+  backdrop-filter: blur(6px);
+}
+
+.staff-card:hover{
+  transform: translateY(-4px); 
+  box-shadow: 0 0 18px rgba(196, 132, 252, 0.5);
+}
+
+.staff-card img{
+  width:80px; 
+  height:80px; 
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:10px;
+  border:2px solid #c084fc;
+}
+
+.staff-card h3{
+  font-size:16px;
+  color:#c084fc;
+  margin-bottom:4px;
+}
+
+.staff-card p{
+  font-size:13px;
+  color:#b4b6d3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav>
+  <div class="navbar-container">
+    <div class="brand">
+      <img src="logo.png" alt="Logo NovaCraft">
+    </div>
+
+    <div class="menu-links">
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="staff.html">Staff</a>
+      <a href="reguli.html">Reguli</a>
+    </div>
+
+    <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="staff-grid">
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 1"><h3>Player1</h3><p>Grad 1</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 2"><h3>Player2</h3><p>Grad 2</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 3"><h3>Player3</h3><p>Grad 3</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 4"><h3>Player4</h3><p>Grad 4</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 5"><h3>Player5</h3><p>Grad 5</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 6"><h3>Player6</h3><p>Grad 6</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 7"><h3>Player7</h3><p>Grad 7</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 8"><h3>Player8</h3><p>Grad 8</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 9"><h3>Player9</h3><p>Grad 9</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 10"><h3>Player10</h3><p>Grad 10</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 11"><h3>Player11</h3><p>Grad 11</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 12"><h3>Player12</h3><p>Grad 12</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 13"><h3>Player13</h3><p>Grad 13</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 14"><h3>Player14</h3><p>Grad 14</p></div>
+    <div class="staff-card"><img src="https://cdn.discordapp.com/attachments/1416365797814698097/1472935988799082506/NovaCraft.png?ex=69946209&is=69931089&hm=1f8b3930627d5513c9dc8f9ae4a10f9f6bbe4898157d40d1b5c275b8ecb97bca&" alt="Staff 15"><h3>Player15</h3><p>Grad 15</p></div>
+  </div>
+</section>
+
+</body>

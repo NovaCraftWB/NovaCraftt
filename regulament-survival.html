@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Regulament Survival - NovaCraft</title>
+<link rel="icon" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at 80% 20%, #2a1b4d, #050811 65%);
+  color:white;
+  min-height:100vh;
+  overflow:hidden; /* scroll doar in card */
+  line-height:1.6;
+}
+
+/* STARS */
+.stars{
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 70% 70%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50% 50%, #fff, transparent),
+    radial-gradient(2px 2px at 85% 20%, #fff, transparent);
+  opacity:.35;
+  z-index:0;
+}
+
+/* NAVBAR */
+nav{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:95%;
+  max-width:1400px;
+  z-index:10;
+}
+
+.navbar-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:18px 32px;
+  backdrop-filter: blur(8px);
+}
+
+.brand img{
+  width:80px;
+}
+
+.menu-links{
+  display:flex;
+  gap:32px;
+}
+
+.menu-links a{
+  color:#cfd0ff;
+  text-decoration:none;
+  font-size:16px;
+  opacity:.9;
+  transition:.25s;
+}
+
+.menu-links a:hover{
+  opacity:1;
+  color:white;
+}
+
+.discord{
+  background:linear-gradient(90deg,#7c3aed,#6366f1);
+  padding:12px 20px;
+  border-radius:14px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  font-size:16px;
+}
+
+/* HERO CONTAINER */
+.hero{
+  padding-top:160px;
+  padding-bottom:60px;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  position:relative;
+  z-index:1;
+}
+
+/* CARD REGULAMENT LARG SI SCROLL INTERN */
+.reg-card{
+  background: rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:16px;
+  padding:30px 40px;
+  max-width:1400px; /* la fel ca navbar-ul */
+  width:95%;
+  height:calc(100vh - 200px); /* lasa spatiu pt navbar si top padding */
+  margin:0 auto;
+  color:#e0e2ff;
+  backdrop-filter: blur(8px);
+  overflow-y:auto; /* scroll intern */
+  scrollbar-width: thin;
+  scrollbar-color: #c084fc transparent;
+}
+
+/* Scrollbar custom pentru Chrome, Edge, Safari */
+.reg-card::-webkit-scrollbar {
+  width:8px;
+}
+
+.reg-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reg-card::-webkit-scrollbar-thumb {
+  background-color:#c084fc;
+  border-radius:4px;
+}
+
+/* TITLURI SI TEXT */
+.reg-card h2{
+  font-size:24px;
+  color:#c084fc;
+  margin-bottom:12px;
+}
+
+.reg-card h3{
+  font-size:20px;
+  color:#b8b9d9;
+  margin:12px 0 6px 0;
+}
+
+.reg-card p, .reg-card ul, .reg-card li{
+  font-size:15px;
+  margin:4px 0;
+  color:#e0e2ff;
+}
+
+.reg-card ul{
+  padding-left:20px;
+}
+
+.reg-card li{
+  margin-bottom:6px;
+}
+
+.reg-card:hover{
+  box-shadow: 0 0 25px rgba(196, 132, 252, 0.4);
+  transform: translateY(-2px);
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav>
+  <div class="navbar-container">
+    <div class="brand">
+      <img src="logo.png" alt="Logo NovaCraft">
+    </div>
+
+    <div class="menu-links">
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="staff.html">Staff</a>
+      <a href="reguli.html">Reguli</a>
+    </div>
+
+    <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="reg-card">
+    <h2>💠 Regulament Survival | NovaCraft</h2>
+    <p>📅 Versiune: 16.02.2026</p>
+    <p>📜 Scop: Asigurarea unui gameplay corect și sigur pentru toți jucătorii din serverul NovaCraft.</p>
+
+    <h3>🔰 1. Principii Generale</h3>
+    <ul>
+      <li>Respectă regulile serverului în orice moment.</li>
+      <li>Comportamentul incorect sau toxic poate duce la sancțiuni.</li>
+      <li>Jucătorii sunt responsabili pentru propriile acțiuni.</li>
+      <li>Staff-ul are ultimul cuvânt în orice decizie.</li>
+    </ul>
+
+    <h3>⚔️ 2. Gameplay și Interacțiuni</h3>
+    <ul>
+      <li>Nu folosi cheat-uri, bug-uri sau exploaturi ale jocului.</li>
+      <li>Respectă ceilalți jucători și nu îi deranja în activități legitime.</li>
+      <li>Nu fura sau distruge proprietăți fără permisiune.</li>
+      <li>Colaborează cu comunitatea pentru experiență plăcută tuturor.</li>
+    </ul>
+
+    <h3>🎯 3. Penalizări</h3>
+    <ul>
+      <li>Abateri minore → avertisment.</li>
+      <li>Abateri medii → kick temporar.</li>
+      <li>Abateri majore → ban permanent.</li>
+    </ul>
+
+    <h3>💬 4. Alte reguli</h3>
+    <ul>
+      <li>Fii respectuos în chat și în canalele vocale.</li>
+      <li>Nu promova alte servere sau comunități fără acord.</li>
+      <li>Raportează problemele staff-ului prin /ticket sau mesaj privat.</li>
+    </ul>
+
+    <p>✅ Respectă regulile și bucură-te de experiența NovaCraft!</p>
+  </div>
+</section>
+
+</body>
+</html>

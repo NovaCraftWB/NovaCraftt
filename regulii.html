@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reguli - NovaCraft</title>
+<link rel="icon" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at 80% 20%, #2a1b4d, #050811 65%);
+  color:white;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* STARS */
+.stars{
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 70% 70%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50% 50%, #fff, transparent),
+    radial-gradient(2px 2px at 85% 20%, #fff, transparent);
+  opacity:.35;
+  z-index:0;
+}
+
+/* NAVBAR */
+nav{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:95%;
+  max-width:1400px;
+  z-index:10;
+}
+
+.navbar-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:18px 32px;
+  backdrop-filter: blur(8px);
+}
+
+.brand img{
+  width:80px;
+}
+
+.menu-links{
+  display:flex;
+  gap:32px;
+}
+
+.menu-links a{
+  color:#cfd0ff;
+  text-decoration:none;
+  font-size:16px;
+  opacity:.9;
+  transition:.25s;
+}
+
+.menu-links a:hover{
+  opacity:1;
+  color:white;
+}
+
+.discord{
+  background:linear-gradient(90deg,#7c3aed,#6366f1);
+  padding:12px 20px;
+  border-radius:14px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  font-size:16px;
+}
+
+/* HERO REGULI */
+.hero{
+  padding-top:160px;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  z-index:1;
+  flex-direction:column;
+  gap:30px;
+}
+
+/* LINKURI REGULI */
+.rule-link{
+  font-size:24px;
+  font-weight:600;
+  color:#cfd0ff;
+  text-decoration:none;
+  position:relative;
+  transition: color 0.3s;
+}
+
+.rule-link::after{
+  content: '→';
+  margin-left:10px;
+  opacity:0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.rule-link:hover{
+  color:white;
+}
+
+.rule-link:hover::after{
+  opacity:1;
+  transform: translateX(5px);
+}
+
+/* Animatie aparitie */
+.rule-link{
+  opacity:0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.rule-link.show{
+  opacity:1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav>
+  <div class="navbar-container">
+    <div class="brand">
+      <img src="logo.png" alt="Logo NovaCraft">
+    </div>
+
+    <div class="menu-links">
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="staff.html">Staff</a>
+      <a href="reguli.html">Reguli</a>
+    </div>
+
+    <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <a class="rule-link" href="regulament-discord.html">Regulament Discord</a>
+  <a class="rule-link" href="regulament-survival.html">Regulament Survival</a>
+</section>
+
+<script>
+// Animatie fade-in pentru linkuri
+window.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.rule-link');
+  links.forEach((link, index) => {
+    setTimeout(() => {
+      link.classList.add('show');
+    }, index * 200); // delay intre linkuri
+  });
+});
+</script>
+
+</body>
+</html>
