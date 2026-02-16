@@ -1,0 +1,206 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NovaCraft</title>
+<link rel="icon" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at 80% 20%, #2a1b4d, #050811 65%);
+  color:white;
+  height:100vh;
+  overflow:hidden;
+}
+
+.stars{
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 70% 70%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50% 50%, #fff, transparent),
+    radial-gradient(2px 2px at 85% 20%, #fff, transparent);
+  opacity:.35;
+  z-index:0;
+}
+
+nav{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:95%;
+  max-width:1400px;
+  z-index:10; 
+}
+
+.navbar-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:18px 32px;
+  backdrop-filter: blur(8px);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+}
+
+.brand img{
+  width:80px; 
+}
+
+.menu-links{
+  display:flex;
+  gap:32px;
+}
+
+.menu-links a{
+  color:#cfd0ff;
+  text-decoration:none;
+  font-size:16px;
+  opacity:.9;
+  transition:.25s;
+}
+
+.menu-links a:hover{
+  opacity:1;
+  color:white;
+}
+
+.discord{
+  background:linear-gradient(90deg,#7c3aed,#6366f1);
+  padding:12px 20px;
+  border-radius:14px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  font-size:16px;
+}
+
+
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.content{
+  text-align:left;
+  max-width:600px;
+  margin-right:400px;
+  z-index:1;
+}
+
+.content p{
+  color:#b4b6d3;
+  font-size:24px;
+  line-height:1.6;
+  margin-bottom:36px;
+}
+
+
+.stats{
+  display:flex;
+  gap:24px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  padding:20px 28px;
+  border-radius:16px;
+  min-width:140px;
+  text-align:center;
+}
+
+.card h3{
+  color:#c084fc;
+  font-size:26px;
+}
+
+.card p{
+  font-size:14px;
+  color:#a6a8c8;
+}
+
+
+.hero-logo{
+  position:absolute;
+  right:140px;
+  top:120px;
+  width:360px; 
+  animation:glow 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+  from{filter:drop-shadow(0 0 50px #7c3aed);}
+  to{filter:drop-shadow(0 0 130px #c084fc);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav>
+  <div class="navbar-container">
+    <div class="brand">
+      <img src="logo.png" alt="Logo NovaCraft">
+
+    </div>
+
+    <div class="menu-links">
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="staff.html">Staff</a>
+      <a href="reguli.html">Reguli</a>
+    </div>
+
+    <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
+  </div>
+</nav>
+
+<section class="hero">
+
+  <div class="content">
+    <p>Explorați lumi infinite și conectați-vă cu comunități diverse într-un network mereu activ.</p>
+
+    <div class="stats">
+      <div class="card">
+        <h3>24/7</h3>
+        <p>Server Online</p>
+      </div>
+      <div class="card">
+        <h3>100%</h3>
+        <p>Securitate</p>
+      </div>
+      <div class="card">
+        <h3>Activă</h3>
+        <p>Comunitate</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="logo.png" class="hero-logo" alt="Logo NovaCraft">
+
+</section>
+
+</body>
