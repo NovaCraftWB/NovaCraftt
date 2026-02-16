@@ -1,16 +1,19 @@
-
+<!DOCTYPE html>
+<html lang="ro">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>NovaCraft</title>
 
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" href="/logo.png">
-<link rel="shortcut icon" href="/favicon.ico">
+<!-- FAVICON GLOBAL -->
+<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/logo.png">
+<link rel="apple-touch-icon" href="/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
   margin:0;
   padding:0;
@@ -44,7 +47,7 @@ nav{
   transform:translateX(-50%);
   width:95%;
   max-width:1400px;
-  z-index:10; 
+  z-index:10;
 }
 
 .navbar-container{
@@ -58,13 +61,8 @@ nav{
   backdrop-filter: blur(8px);
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-}
-
 .brand img{
-  width:80px; 
+  width:80px;
 }
 
 .menu-links{
@@ -95,7 +93,6 @@ nav{
   font-size:16px;
 }
 
-
 .hero{
   height:100vh;
   display:flex;
@@ -117,7 +114,6 @@ nav{
   line-height:1.6;
   margin-bottom:36px;
 }
-
 
 .stats{
   display:flex;
@@ -143,12 +139,11 @@ nav{
   color:#a6a8c8;
 }
 
-
 .hero-logo{
   position:absolute;
   right:140px;
   top:120px;
-  width:360px; 
+  width:360px;
   animation:glow 3.5s ease-in-out infinite alternate;
 }
 
@@ -166,15 +161,14 @@ nav{
 <nav>
   <div class="navbar-container">
     <div class="brand">
-      <img src="logo.png" alt="Logo NovaCraft">
-
+      <img src="/logo.png" alt="Logo NovaCraft">
     </div>
 
     <div class="menu-links">
-      <a href="index.html">Acasă</a>
-      <a href="despre.html">Despre</a>
-      <a href="staff.html">Staff</a>
-      <a href="reguli.html">Reguli</a>
+      <a href="/index">Acasă</a>
+      <a href="/despre">Despre</a>
+      <a href="/staff">Staff</a>
+      <a href="/reguli">Reguli</a>
     </div>
 
     <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
@@ -202,11 +196,9 @@ nav{
     </div>
   </div>
 
-  <img src="logo.png" class="hero-logo" alt="Logo NovaCraft">
+  <img src="/logo.png" class="hero-logo" alt="Logo NovaCraft">
 
 </section>
 
 </body>
-
-
-
+</html>
