@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "novacraft-site",
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/index", "dest": "/index.html" },
+    { "src": "/despre", "dest": "/despre.html" },
+    { "src": "/staff", "dest": "/staff.html" },
+    { "src": "/reguli", "dest": "/reguli.html" },
+    { "src": "/regulament-discord", "dest": "/regulament-discord.html" },
+    { "src": "/regulament-survival", "dest": "/regulament-survival.html" }
+  ]
+}
