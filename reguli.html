@@ -1,14 +1,13 @@
+<!DOCTYPE html>
+<html lang="ro">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Reguli - NovaCraft</title>
- <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.png">
+<link rel="icon" href="logo.png">
 
-
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <script>
 document.addEventListener("contextmenu", e => e.preventDefault());
 document.onkeydown = function(e){
@@ -17,8 +16,7 @@ document.onkeydown = function(e){
 };
 </script>
 
-
-
+ 
 <style>
 *{
   margin:0;
@@ -34,6 +32,7 @@ body{
   overflow-x:hidden;
 }
 
+/* STARS */
 .stars{
   position:absolute;
   inset:0;
@@ -46,6 +45,7 @@ body{
   z-index:0;
 }
 
+/* NAVBAR */
 nav{
   position:absolute;
   top:20px;
@@ -99,6 +99,7 @@ nav{
   font-size:16px;
 }
 
+/* HERO REGULI */
 .hero{
   padding-top:160px;
   min-height:100vh;
@@ -111,6 +112,7 @@ nav{
   gap:30px;
 }
 
+/* LINKURI REGULI */
 .rule-link{
   font-size:24px;
   font-weight:600;
@@ -136,6 +138,7 @@ nav{
   transform: translateX(5px);
 }
 
+/* Animatie aparitie */
 .rule-link{
   opacity:0;
   transform: translateY(20px);
@@ -156,14 +159,14 @@ nav{
 <nav>
   <div class="navbar-container">
     <div class="brand">
-      <img src="/logo.png" alt="Logo NovaCraft">
+      <img src="logo.png" alt="Logo NovaCraft">
     </div>
 
     <div class="menu-links">
-      <a href="/">Acasă</a>
-      <a href="/despre">Despre</a>
-      <a href="/staff">Staff</a>
-      <a href="/reguli">Reguli</a>
+      <a href="index.html">Acasă</a>
+      <a href="despre.html">Despre</a>
+      <a href="staff.html">Staff</a>
+      <a href="reguli.html">Reguli</a>
     </div>
 
     <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
@@ -171,28 +174,21 @@ nav{
 </nav>
 
 <section class="hero">
-  <a class="rule-link" href="/regulament-discord">Regulament Discord</a>
-  <a class="rule-link" href="/regulament-survival">Regulament Survival</a>
+  <a class="rule-link" href="regulament-discord.html">Regulament Discord</a>
+  <a class="rule-link" href="regulament-survival.html">Regulament Survival</a>
 </section>
 
 <script>
-
+// Animatie fade-in pentru linkuri
 window.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.rule-link');
   links.forEach((link, index) => {
     setTimeout(() => {
       link.classList.add('show');
-    }, index * 200); 
+    }, index * 200); // delay intre linkuri
   });
 });
 </script>
 
 </body>
-
-
-
-
-
-
-
-
+</html>
