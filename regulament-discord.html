@@ -8,20 +8,14 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <title>Rwar</title>
-  <script>
-    document.addEventListener("contextmenu", e => e.preventDefault());
-    document.onkeydown = function(e){
-      if (e.key === "F12") return false;
-      if (e.ctrlKey && e.shiftKey && e.key === "I") return false;
-    };
-  </script>
-</head>
-<body>
-  <h1>Pagina mea</h1>
-  <p>Nu poți da click dreapta sau F12 (încercă tu!).</p>
-</body>
+<script>
+document.addEventListener("contextmenu", e => e.preventDefault());
+document.onkeydown = function(e){
+  if (e.key === "F12") return false;
+  if (e.ctrlKey && e.shiftKey && e.key === "I") return false;
+};
+</script>
+
 
   <style>
 *{
@@ -246,6 +240,7 @@ nav{
 </section>
 
 </body>
+
 
 
 
