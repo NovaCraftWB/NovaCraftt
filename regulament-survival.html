@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="ro">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Regulament Survival - NovaCraft</title>
-<link rel="icon" href="logo.png">
+<link rel="icon" href="/logo.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -21,11 +19,10 @@ body{
   background: radial-gradient(circle at 80% 20%, #2a1b4d, #050811 65%);
   color:white;
   min-height:100vh;
-  overflow:hidden; /* scroll doar in card */
+  overflow:hidden; 
   line-height:1.6;
 }
 
-/* STARS */
 .stars{
   position:absolute;
   inset:0;
@@ -38,7 +35,6 @@ body{
   z-index:0;
 }
 
-/* NAVBAR */
 nav{
   position:absolute;
   top:20px;
@@ -92,7 +88,6 @@ nav{
   font-size:16px;
 }
 
-/* HERO CONTAINER */
 .hero{
   padding-top:160px;
   padding-bottom:60px;
@@ -104,24 +99,22 @@ nav{
   z-index:1;
 }
 
-/* CARD REGULAMENT LARG SI SCROLL INTERN */
 .reg-card{
   background: rgba(255,255,255,0.06);
   border:1px solid rgba(255,255,255,0.12);
   border-radius:16px;
   padding:30px 40px;
-  max-width:1400px; /* la fel ca navbar-ul */
+  max-width:1400px; 
   width:95%;
-  height:calc(100vh - 200px); /* lasa spatiu pt navbar si top padding */
+  height:calc(100vh - 200px); 
   margin:0 auto;
   color:#e0e2ff;
   backdrop-filter: blur(8px);
-  overflow-y:auto; /* scroll intern */
+  overflow-y:auto; 
   scrollbar-width: thin;
   scrollbar-color: #c084fc transparent;
 }
 
-/* Scrollbar custom pentru Chrome, Edge, Safari */
 .reg-card::-webkit-scrollbar {
   width:8px;
 }
@@ -135,7 +128,6 @@ nav{
   border-radius:4px;
 }
 
-/* TITLURI SI TEXT */
 .reg-card h2{
   font-size:24px;
   color:#c084fc;
@@ -176,14 +168,14 @@ nav{
 <nav>
   <div class="navbar-container">
     <div class="brand">
-      <img src="logo.png" alt="Logo NovaCraft">
+      <img src="/logo.png" alt="Logo NovaCraft">
     </div>
 
     <div class="menu-links">
-      <a href="index.html">Acasă</a>
-      <a href="despre.html">Despre</a>
-      <a href="staff.html">Staff</a>
-      <a href="reguli.html">Reguli</a>
+      <a href="/">Acasă</a>
+      <a href="/despre">Despre</a>
+      <a href="/staff">Staff</a>
+      <a href="/reguli">Reguli</a>
     </div>
 
     <a class="discord" href="https://discord.gg/PC8Stb4R">Discord</a>
@@ -231,4 +223,3 @@ nav{
 </section>
 
 </body>
-</html>
